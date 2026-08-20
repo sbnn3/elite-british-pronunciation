@@ -104,10 +104,22 @@ p{margin:0;}
 @media (prefers-reduced-motion: reduce){[data-reveal]{opacity:1;transform:none;transition:none;}}
 
 /* ===== Announcement bar ===== */
-.promise-bar{background:var(--navy-deep);color:var(--paper-soft);font-size:0.85rem;}
-.promise-bar .container{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:0.4em 0.9em;padding-top:0.6rem;padding-bottom:0.6rem;text-align:center;}
-.promise-bar strong{color:var(--gold-bright);font-weight:500;}
-.promise-bar .divider{opacity:0.35;}
+.promise-bar{background:var(--navy-deep);color:var(--slate-on-dark);font-size:0.76rem;overflow:hidden;position:relative;border-bottom:1px solid rgba(210,169,79,0.15);}
+.promise-bar::before,.promise-bar::after{content:"";position:absolute;top:0;bottom:0;width:clamp(1.5rem,6vw,4rem);z-index:2;pointer-events:none;}
+.promise-bar::before{left:0;background:linear-gradient(90deg, var(--navy-deep) 20%, transparent);}
+.promise-bar::after{right:0;background:linear-gradient(270deg, var(--navy-deep) 20%, transparent);}
+.promise-track{display:flex;width:max-content;padding:0.55rem 0;animation:promise-scroll 34s linear infinite;}
+.promise-bar:hover .promise-track{animation-play-state:paused;}
+.promise-seq{display:flex;align-items:center;flex:none;white-space:nowrap;letter-spacing:0.01em;}
+.promise-seq span.item{padding:0 1.6em;}
+.promise-seq strong{color:var(--gold-bright);font-weight:500;}
+.promise-sep{color:var(--gold);opacity:0.55;font-size:0.7em;}
+@keyframes promise-scroll{from{transform:translateX(0);}to{transform:translateX(-50%);}}
+@media (prefers-reduced-motion: reduce){
+  .promise-track{animation:none;width:100%;flex-wrap:wrap;justify-content:center;padding:0.6rem clamp(1rem,4vw,2.5rem);}
+  .promise-seq:last-child{display:none;}
+  .promise-bar::before,.promise-bar::after{display:none;}
+}
 
 /* ===== Nav ===== */
 .nav{position:sticky;top:0;z-index:50;background:rgba(17,26,48,0.92);backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,0.08);}
@@ -308,11 +320,20 @@ p{margin:0;}
 <body>
 
 <!-- PROMISE BAR -->
-<div class="promise-bar">
-  <div class="container">
-    <span>Learn to speak British English with the clarity, rhythm and confidence that opens doors, builds trust and makes every conversation effortless.</span>
-    <span class="divider">/</span>
-    <span>Guided by Oxford-trained pronunciation expert, <strong>Sanda Beniamines</strong></span>
+<div class="promise-bar" role="note" aria-label="Learn to speak British English with the clarity, rhythm and confidence that opens doors, builds trust and makes every conversation effortless. Guided by Oxford-trained pronunciation expert, Sanda Beniamines.">
+  <div class="promise-track" aria-hidden="true">
+    <span class="promise-seq">
+      <span class="item">Learn to speak British English with the clarity, rhythm and confidence that opens doors, builds trust and makes every conversation effortless.</span>
+      <span class="promise-sep">&#10022;</span>
+      <span class="item">Guided by Oxford-trained pronunciation expert, <strong>Sanda Beniamines</strong></span>
+      <span class="promise-sep">&#10022;</span>
+    </span>
+    <span class="promise-seq">
+      <span class="item">Learn to speak British English with the clarity, rhythm and confidence that opens doors, builds trust and makes every conversation effortless.</span>
+      <span class="promise-sep">&#10022;</span>
+      <span class="item">Guided by Oxford-trained pronunciation expert, <strong>Sanda Beniamines</strong></span>
+      <span class="promise-sep">&#10022;</span>
+    </span>
   </div>
 </div>
 
