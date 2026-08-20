@@ -1,0 +1,924 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Elite British English Pronunciation Programme | CELA Academy</title>
+<meta name="description" content="A premium three-week pronunciation programme for professionals who already speak English well — guided by Oxford-trained linguist Sanda Beniamines. Master clarity, rhythm and confidence in British English." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500;1,9..144,600&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#121A2E;
+  --ink-soft:#1C2740;
+  --navy:#111A30;
+  --navy-deep:#0B1224;
+  --paper:#F1ECDF;
+  --paper-soft:#F8F5EC;
+  --paper-line:#E1D9C4;
+  --gold:#B98E3D;
+  --gold-bright:#D2A94F;
+  --wine:#6E2430;
+  --slate:#5B6478;
+  --slate-on-dark:#AEB6CC;
+  --white:#FFFFFF;
+  --ok-radius:2px;
+  --max:1180px;
+  --gap:clamp(1.25rem, 2.2vw, 2.5rem);
+  --shadow-soft: 0 20px 60px -25px rgba(11,18,36,0.35);
+  font-size:16px;
+}
+*,*::before,*::after{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto;}}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:'Work Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size:1.0625rem;
+  line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block;}
+a{color:inherit;}
+.container{max-width:var(--max);margin:0 auto;padding:0 clamp(1.25rem,4vw,2.5rem);}
+h1,h2,h3{
+  font-family:'Fraunces', Georgia, 'Times New Roman', serif;
+  font-weight:500;
+  line-height:1.12;
+  letter-spacing:-0.01em;
+  text-wrap:balance;
+  margin:0;
+}
+h1{font-size:clamp(2.1rem, 4.6vw, 3.7rem);}
+h2.subhead{font-size:clamp(1.15rem, 2vw, 1.5rem);font-family:'Work Sans',sans-serif;font-weight:500;line-height:1.45;text-wrap:balance;}
+p{margin:0;}
+.eyebrow{
+  font-family:'IBM Plex Mono', monospace;
+  font-size:0.72rem;
+  letter-spacing:0.16em;
+  text-transform:uppercase;
+  color:var(--gold);
+  display:inline-flex;
+  align-items:center;
+  gap:0.5em;
+  margin-bottom:1.1rem;
+}
+.eyebrow::before,.eyebrow::after{content:"";width:1.1em;height:1px;background:var(--gold);opacity:0.6;}
+.ipa{font-family:'IBM Plex Mono', monospace;}
+.btn{
+  font-family:'Work Sans',sans-serif;
+  font-weight:600;
+  font-size:0.95rem;
+  letter-spacing:0.01em;
+  display:inline-flex;
+  align-items:center;
+  gap:0.6em;
+  padding:0.95em 1.7em;
+  border-radius:var(--ok-radius);
+  border:1px solid transparent;
+  cursor:pointer;
+  text-decoration:none;
+  transition:transform .25s ease, box-shadow .25s ease, background-color .25s ease, color .25s ease, border-color .25s ease;
+}
+.btn-gold{background:var(--gold);color:var(--navy-deep);}
+.btn-gold:hover{background:var(--gold-bright);transform:translateY(-2px);box-shadow:0 12px 24px -10px rgba(185,142,61,0.55);}
+.btn-outline{background:transparent;border-color:currentColor;color:inherit;}
+.btn-outline:hover{background:rgba(185,142,61,0.12);border-color:var(--gold);color:var(--gold);}
+.btn-ghost-dark{background:transparent;border-color:rgba(255,255,255,0.35);color:var(--white);}
+.btn-ghost-dark:hover{border-color:var(--gold-bright);color:var(--gold-bright);}
+@media (prefers-reduced-motion: reduce){.btn{transition:none;}.btn-gold:hover{transform:none;}}
+
+.section{padding:clamp(4rem,9vw,7.5rem) 0;}
+.section-dark{background:var(--navy);color:var(--paper-soft);}
+.section-deep{background:var(--navy-deep);color:var(--paper-soft);}
+.section-light{background:var(--paper);color:var(--ink);}
+.section-paper-soft{background:var(--paper-soft);color:var(--ink);}
+.rule{height:1px;background:linear-gradient(90deg, var(--gold) 0, var(--paper-line) 40%);opacity:0.5;margin:0 0 3rem;}
+.section-dark .rule,.section-deep .rule{background:linear-gradient(90deg, var(--gold-bright) 0, rgba(255,255,255,0.12) 45%);opacity:0.6;}
+
+[data-reveal]{opacity:0;transform:translateY(18px);transition:opacity .7s ease, transform .7s ease;}
+[data-reveal].is-visible{opacity:1;transform:translateY(0);}
+@media (prefers-reduced-motion: reduce){[data-reveal]{opacity:1;transform:none;transition:none;}}
+
+/* ===== Announcement bar ===== */
+.promise-bar{background:var(--navy-deep);color:var(--paper-soft);font-size:0.85rem;}
+.promise-bar .container{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:0.4em 0.9em;padding-top:0.6rem;padding-bottom:0.6rem;text-align:center;}
+.promise-bar strong{color:var(--gold-bright);font-weight:500;}
+.promise-bar .divider{opacity:0.35;}
+
+/* ===== Nav ===== */
+.nav{position:sticky;top:0;z-index:50;background:rgba(17,26,48,0.92);backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,0.08);}
+.nav .container{display:flex;align-items:center;justify-content:space-between;height:4.5rem;}
+.brand{display:flex;align-items:center;gap:0.7rem;color:var(--paper-soft);text-decoration:none;font-family:'Fraunces',serif;font-size:1.05rem;letter-spacing:0.01em;}
+.brand-mark{width:2.1rem;height:2.1rem;border:1px solid var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'IBM Plex Mono',monospace;font-size:0.68rem;color:var(--gold-bright);letter-spacing:0.02em;}
+.nav-links{display:flex;align-items:center;gap:2.1rem;list-style:none;margin:0;padding:0;}
+.nav-links a{color:var(--slate-on-dark);text-decoration:none;font-size:0.92rem;transition:color .2s ease;}
+.nav-links a:hover{color:var(--gold-bright);}
+.nav-cta{display:flex;align-items:center;gap:1.4rem;}
+.nav-toggle{display:none;}
+@media (max-width: 880px){
+  .nav-links{display:none;}
+  .nav-toggle{display:block;background:none;border:1px solid rgba(255,255,255,0.25);color:var(--paper-soft);border-radius:var(--ok-radius);padding:0.5em 0.8em;font-family:'IBM Plex Mono',monospace;font-size:0.7rem;letter-spacing:0.08em;}
+}
+
+/* ===== Hero ===== */
+.hero{position:relative;background:radial-gradient(120% 140% at 15% -10%, #1B2748 0%, var(--navy-deep) 55%);color:var(--paper-soft);overflow:hidden;padding:clamp(4.5rem,10vw,8rem) 0 clamp(4rem,8vw,6rem);}
+.hero::before{content:"";position:absolute;inset:0;background-image:radial-gradient(1px 1px at 20% 30%, rgba(210,169,79,0.35) 1px, transparent 0),radial-gradient(1px 1px at 70% 65%, rgba(210,169,79,0.25) 1px, transparent 0),radial-gradient(1px 1px at 45% 80%, rgba(210,169,79,0.2) 1px, transparent 0);pointer-events:none;}
+.hero-grid{position:relative;display:grid;grid-template-columns:1.15fr 0.85fr;gap:clamp(2.5rem,5vw,4rem);align-items:center;}
+@media (max-width: 960px){.hero-grid{grid-template-columns:1fr;}}
+.hero h1{color:var(--white);}
+.hero h1 em{font-style:italic;color:var(--gold-bright);}
+.hero .lede{margin-top:1.6rem;font-size:1.15rem;color:var(--slate-on-dark);max-width:38em;}
+.hero .lede + .lede{margin-top:1.1rem;}
+.hero-cta-row{display:flex;flex-wrap:wrap;gap:1rem;margin-top:2.4rem;align-items:center;}
+.hero-meta{margin-top:2.5rem;display:flex;gap:2.2rem;flex-wrap:wrap;font-family:'IBM Plex Mono',monospace;font-size:0.78rem;color:var(--slate-on-dark);letter-spacing:0.03em;}
+.hero-meta b{color:var(--gold-bright);font-weight:500;}
+.hero-portrait{position:relative;aspect-ratio:4/5;border-radius:4px;overflow:hidden;background:linear-gradient(155deg,#233252 0%, #131C33 70%);border:1px solid rgba(210,169,79,0.35);display:flex;align-items:center;justify-content:center;box-shadow:var(--shadow-soft);}
+.hero-portrait .monogram{font-family:'Fraunces',serif;font-size:5.5rem;color:rgba(210,169,79,0.4);letter-spacing:0.02em;}
+.hero-portrait .cap{position:absolute;left:0;right:0;bottom:0;padding:1.3rem 1.4rem;background:linear-gradient(0deg, rgba(11,18,36,0.85), transparent);font-family:'IBM Plex Mono',monospace;font-size:0.72rem;color:var(--slate-on-dark);letter-spacing:0.03em;}
+
+/* ===== Eyebrow-header pattern ===== */
+.head-block{max-width:46em;margin-bottom:clamp(2.5rem,5vw,3.75rem);}
+.head-block.center{margin-left:auto;margin-right:auto;text-align:center;}
+.head-block h2.subhead{margin-top:1.1rem;color:var(--slate);}
+.section-dark .head-block h2.subhead,.section-deep .head-block h2.subhead{color:var(--slate-on-dark);}
+
+/* ===== Problem list ===== */
+.cost-list{list-style:none;margin:2.5rem 0 0;padding:0;display:grid;gap:0;border-top:1px solid var(--paper-line);}
+.cost-list li{padding:1.15rem 0;border-bottom:1px solid var(--paper-line);display:flex;gap:1rem;font-size:1.02rem;}
+.cost-list li::before{content:"—";color:var(--gold);flex:none;font-family:'IBM Plex Mono',monospace;}
+.pull-quote{font-family:'Fraunces',serif;font-style:italic;font-size:clamp(1.4rem,2.6vw,2rem);line-height:1.4;max-width:32em;margin:3rem 0 0;color:var(--ink);text-wrap:balance;}
+.section-dark .pull-quote,.section-deep .pull-quote{color:var(--white);}
+.pull-quote cite{display:block;font-style:normal;font-family:'IBM Plex Mono',monospace;font-size:0.75rem;letter-spacing:0.06em;text-transform:uppercase;color:var(--gold);margin-top:1.2rem;}
+
+/* ===== Stat section ===== */
+.stat-wrap{display:grid;grid-template-columns:0.9fr 1.1fr;gap:clamp(2.5rem,6vw,5rem);align-items:start;}
+@media (max-width:900px){.stat-wrap{grid-template-columns:1fr;}}
+.stat-big{font-family:'Fraunces',serif;font-size:clamp(4.5rem,10vw,7.5rem);line-height:0.9;color:var(--gold-bright);}
+.stat-cap{font-family:'IBM Plex Mono',monospace;font-size:0.8rem;letter-spacing:0.04em;color:var(--slate-on-dark);margin-top:1rem;max-width:22em;}
+.impact-grid{display:grid;gap:1.6rem;margin-top:2.2rem;}
+.impact-item{border-left:2px solid var(--gold);padding-left:1.3rem;}
+.impact-item b{color:var(--gold-bright);font-family:'Fraunces',serif;font-weight:500;font-size:1.05rem;display:block;margin-bottom:0.3rem;}
+.impact-item p{color:var(--slate-on-dark);}
+.ask-box{margin-top:2.8rem;padding:1.6rem 1.8rem;border:1px solid rgba(210,169,79,0.35);border-radius:4px;background:rgba(210,169,79,0.05);}
+.ask-box p:first-child{font-family:'IBM Plex Mono',monospace;font-size:0.72rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--gold-bright);margin-bottom:0.7rem;}
+.ask-box p.q{font-family:'Fraunces',serif;font-style:italic;font-size:1.25rem;color:var(--white);}
+
+/* ===== Includes strip ===== */
+.includes-strip{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:var(--paper-line);border:1px solid var(--paper-line);}
+@media (max-width:900px){.includes-strip{grid-template-columns:repeat(2,1fr);}}
+@media (max-width:520px){.includes-strip{grid-template-columns:1fr;}}
+.includes-item{background:var(--paper-soft);padding:1.8rem 1.5rem;font-size:0.95rem;}
+.includes-item .num{font-family:'IBM Plex Mono',monospace;color:var(--gold);font-size:0.78rem;display:block;margin-bottom:0.8rem;}
+
+/* ===== Pillars ===== */
+.pillars{display:grid;gap:clamp(1.5rem,3vw,2rem);}
+.pillar{display:grid;grid-template-columns:auto 1fr;gap:clamp(1.5rem,4vw,3rem);padding:clamp(2rem,4vw,2.8rem) 0;border-top:1px solid var(--paper-line);}
+.pillar:last-child{border-bottom:1px solid var(--paper-line);}
+@media (max-width:760px){.pillar{grid-template-columns:1fr;gap:1rem;}}
+.pillar-num{font-family:'IBM Plex Mono',monospace;font-size:0.85rem;color:var(--gold);letter-spacing:0.05em;padding-top:0.3rem;}
+.pillar h3{font-size:clamp(1.3rem,2.2vw,1.65rem);margin-bottom:0.7rem;}
+.pillar > div > p.lede{color:var(--slate);margin-bottom:1.3rem;max-width:42em;}
+.pillar ul{list-style:none;margin:0;padding:0;display:grid;gap:0.65rem;max-width:42em;}
+.pillar ul li{padding-left:1.4rem;position:relative;font-size:0.98rem;}
+.pillar ul li::before{content:"";position:absolute;left:0;top:0.55em;width:0.5rem;height:1px;background:var(--gold);}
+.pillar ul li:last-child{font-style:italic;font-family:'Fraunces',serif;color:var(--ink);font-size:1.05rem;padding-left:0;margin-top:0.3rem;}
+.pillar ul li:last-child::before{display:none;}
+
+/* ===== Quote / video section ===== */
+.quote-section{position:relative;}
+.quote-media-wrap{display:grid;grid-template-columns:0.75fr 1.25fr;gap:clamp(2.5rem,5vw,4.5rem);align-items:center;}
+@media (max-width:880px){.quote-media-wrap{grid-template-columns:1fr;}}
+.video-cutout{position:relative;aspect-ratio:3/4;border-radius:4px;background:linear-gradient(160deg,#1D2A4A,#0B1224 75%);display:flex;align-items:center;justify-content:center;overflow:hidden;border:1px solid rgba(210,169,79,0.3);}
+.video-cutout .play{width:3.6rem;height:3.6rem;border-radius:50%;border:1px solid var(--gold);display:flex;align-items:center;justify-content:center;color:var(--gold-bright);font-size:0.9rem;}
+.video-cutout .tag{position:absolute;top:1.2rem;left:1.2rem;font-family:'IBM Plex Mono',monospace;font-size:0.68rem;letter-spacing:0.08em;color:var(--slate-on-dark);text-transform:uppercase;border:1px solid rgba(255,255,255,0.25);padding:0.35em 0.7em;border-radius:2px;}
+
+/* ===== About / credentials ===== */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2.5rem,5vw,4rem);}
+@media (max-width:900px){.about-grid{grid-template-columns:1fr;}}
+.about-copy > p{margin-bottom:1.3rem;color:var(--slate);}
+.about-copy .highlight{padding:1.4rem 1.6rem;border-left:2px solid var(--gold);background:rgba(185,142,61,0.06);color:var(--ink);font-family:'Fraunces',serif;font-size:1.1rem;font-style:italic;margin:1.8rem 0;}
+.credentials{list-style:none;margin:0;padding:0;display:grid;gap:1.4rem;}
+.credentials li{display:grid;grid-template-columns:auto 1fr;gap:1rem;padding-bottom:1.4rem;border-bottom:1px solid var(--paper-line);}
+.credentials .mark{color:var(--gold);font-family:'IBM Plex Mono',monospace;padding-top:0.15rem;}
+.credentials .inst{font-family:'Fraunces',serif;font-size:1.05rem;margin-bottom:0.25rem;}
+.credentials .yr{font-family:'IBM Plex Mono',monospace;font-size:0.72rem;color:var(--gold);margin-left:0.5em;}
+.credentials p{color:var(--slate);font-size:0.94rem;}
+
+/* ===== Before / After ===== */
+.ba-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--paper-line);border:1px solid var(--paper-line);margin-top:2.5rem;}
+@media (max-width:760px){.ba-grid{grid-template-columns:1fr;}}
+.ba-col{background:var(--paper-soft);padding:clamp(1.8rem,3vw,2.6rem);}
+.ba-col .tag{font-family:'IBM Plex Mono',monospace;font-size:0.72rem;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:1rem;display:inline-block;}
+.ba-before .tag{color:var(--wine);}
+.ba-after .tag{color:var(--gold);}
+.ba-col p{font-size:1rem;}
+.ba-after{position:relative;}
+
+/* ===== Testimonials ===== */
+.testi-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:clamp(1.5rem,3vw,2rem);margin-top:2.5rem;}
+@media (max-width:760px){.testi-grid{grid-template-columns:1fr;}}
+.testi-card{border:1px solid var(--paper-line);background:var(--paper-soft);padding:clamp(1.8rem,3vw,2.4rem);border-radius:4px;}
+.testi-card p.q{font-family:'Fraunces',serif;font-style:italic;font-size:1.2rem;line-height:1.5;color:var(--ink);}
+.testi-card p.attr{margin-top:1.2rem;font-family:'IBM Plex Mono',monospace;font-size:0.75rem;color:var(--gold);letter-spacing:0.03em;}
+
+/* ===== Transformation list ===== */
+.trans-list{list-style:none;margin:2.5rem 0 0;padding:0;display:grid;gap:1.4rem;}
+.trans-list li{display:grid;grid-template-columns:2rem 1fr;gap:1rem;}
+.trans-list .ck{font-family:'IBM Plex Mono',monospace;color:var(--gold);}
+.trans-list b{font-family:'Fraunces',serif;font-weight:500;}
+
+/* ===== Pricing ===== */
+.price-toggle-wrap{display:flex;justify-content:center;margin-bottom:3rem;}
+.price-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(1.5rem,3vw,2.2rem);align-items:stretch;}
+@media (max-width:860px){.price-grid{grid-template-columns:1fr;}}
+.price-card{background:var(--paper-soft);border:1px solid var(--paper-line);border-radius:6px;padding:clamp(2rem,3.5vw,2.7rem);display:flex;flex-direction:column;position:relative;}
+.price-card.featured{border-color:var(--gold);box-shadow:var(--shadow-soft);}
+.price-card .flag{position:absolute;top:-0.85rem;left:2rem;background:var(--gold);color:var(--navy-deep);font-family:'IBM Plex Mono',monospace;font-size:0.68rem;letter-spacing:0.08em;text-transform:uppercase;padding:0.35em 0.8em;border-radius:2px;}
+.price-card h3{font-size:1.5rem;margin-bottom:0.5rem;}
+.price-card .desc{color:var(--slate);font-size:0.95rem;margin-bottom:1.6rem;}
+.price-row{display:flex;align-items:baseline;gap:0.6rem;margin-bottom:0.3rem;}
+.price-row .now{font-family:'Fraunces',serif;font-size:2.6rem;color:var(--ink);}
+.price-row .was{font-family:'IBM Plex Mono',monospace;color:var(--slate);text-decoration:line-through;font-size:1rem;}
+.price-value{font-family:'IBM Plex Mono',monospace;font-size:0.75rem;color:var(--gold);letter-spacing:0.03em;margin-bottom:1.8rem;}
+.price-feats{list-style:none;margin:0 0 2rem;padding:0;display:grid;gap:0.85rem;flex:1;}
+.price-feats li{display:grid;grid-template-columns:1.1rem 1fr;gap:0.7rem;font-size:0.94rem;}
+.price-feats b{display:block;font-weight:600;}
+.price-feats .sub{color:var(--slate);font-size:0.88rem;}
+.price-feats .ck{color:var(--gold);font-family:'IBM Plex Mono',monospace;}
+
+/* ===== Who list ===== */
+.who-list{list-style:none;margin:2.5rem 0 0;padding:0;counter-reset:who;display:grid;gap:0;}
+.who-item{counter-increment:who;padding:1.6rem 0;border-top:1px solid var(--paper-line);display:grid;grid-template-columns:2.4rem 1fr;gap:1rem;}
+.who-list .who-item:last-of-type{border-bottom:1px solid var(--paper-line);}
+.who-item::before{content:counter(who,decimal-leading-zero);font-family:'IBM Plex Mono',monospace;color:var(--gold);font-size:0.85rem;padding-top:0.2rem;}
+.who-item h4{font-family:'Fraunces',serif;font-weight:500;font-size:1.12rem;margin-bottom:0.4rem;}
+.who-item p{color:var(--slate);font-size:0.96rem;}
+.pain-list{list-style:none;margin:2rem 0 0;padding:1.6rem 1.8rem;background:rgba(110,36,48,0.05);border:1px solid rgba(110,36,48,0.2);border-radius:4px;display:grid;gap:0.7rem;}
+.pain-list li{padding-left:1.2rem;position:relative;font-size:0.95rem;}
+.pain-list li::before{content:"·";position:absolute;left:0;color:var(--wine);font-size:1.4rem;line-height:0.6;}
+
+/* ===== Trust bar ===== */
+.trust-strip{display:flex;flex-wrap:wrap;gap:2.5rem;justify-content:center;align-items:center;margin-top:2.5rem;opacity:0.85;}
+.trust-strip span{font-family:'Fraunces',serif;font-size:1.05rem;color:var(--slate-on-dark);letter-spacing:0.02em;}
+
+/* ===== FAQ ===== */
+.faq-list{max-width:52em;margin:2.5rem auto 0;}
+.faq-item{border-top:1px solid var(--paper-line);}
+.faq-list .faq-item:last-child{border-bottom:1px solid var(--paper-line);}
+.faq-q{width:100%;text-align:left;background:none;border:none;padding:1.5rem 0;display:flex;justify-content:space-between;align-items:center;gap:1.5rem;cursor:pointer;font-family:'Fraunces',serif;font-size:1.08rem;color:var(--ink);}
+.faq-q .plus{font-family:'IBM Plex Mono',monospace;color:var(--gold);flex:none;transition:transform .3s ease;}
+.faq-item[open] .faq-q .plus{transform:rotate(45deg);}
+.faq-a{padding:0 0 1.7rem;color:var(--slate);font-size:0.98rem;max-width:44em;}
+.faq-item summary{list-style:none;}
+.faq-item summary::-webkit-details-marker{display:none;}
+
+/* ===== Final CTA ===== */
+.final-cta{text-align:center;}
+.final-cta .head-block{margin-left:auto;margin-right:auto;}
+.slots{display:inline-flex;align-items:center;gap:0.6em;margin:2rem 0;padding:0.7em 1.3em;border:1px solid rgba(210,169,79,0.4);border-radius:999px;font-family:'IBM Plex Mono',monospace;font-size:0.78rem;color:var(--gold-bright);}
+.slots .dot{width:0.5em;height:0.5em;border-radius:50%;background:var(--gold-bright);}
+
+/* ===== Footer ===== */
+.footer{background:var(--navy-deep);color:var(--slate-on-dark);padding:clamp(3rem,6vw,4.5rem) 0 2rem;font-size:0.92rem;}
+.footer-top{display:grid;grid-template-columns:1.4fr 1fr;gap:2.5rem;padding-bottom:2.5rem;border-bottom:1px solid rgba(255,255,255,0.08);}
+@media (max-width:700px){.footer-top{grid-template-columns:1fr;}}
+.footer .brand{margin-bottom:0.9rem;}
+.footer-links{list-style:none;margin:0;padding:0;display:grid;gap:0.7rem;}
+.footer-links a{text-decoration:none;color:var(--slate-on-dark);}
+.footer-links a:hover{color:var(--gold-bright);}
+.footer-bottom{padding-top:1.6rem;display:flex;flex-wrap:wrap;justify-content:space-between;gap:1rem;font-size:0.82rem;opacity:0.75;}
+
+/* ===== Checkout modal (Stripe) ===== */
+.co-backdrop{position:fixed;inset:0;background:rgba(11,18,36,0.72);backdrop-filter:blur(3px);display:none;align-items:center;justify-content:center;z-index:100;padding:1.5rem;}
+.co-backdrop.open{display:flex;}
+.co-modal{background:var(--paper-soft);border-radius:6px;max-width:26rem;width:100%;padding:2.2rem;position:relative;box-shadow:var(--shadow-soft);}
+.co-modal h3{font-size:1.3rem;margin-bottom:0.6rem;}
+.co-modal p{color:var(--slate);font-size:0.94rem;margin-bottom:1.4rem;}
+.co-close{position:absolute;top:1rem;right:1rem;background:none;border:none;font-size:1.1rem;cursor:pointer;color:var(--slate);font-family:'IBM Plex Mono',monospace;}
+.co-status{margin-top:1rem;font-size:0.85rem;font-family:'IBM Plex Mono',monospace;color:var(--wine);display:none;}
+.co-status.show{display:block;}
+
+::selection{background:var(--gold);color:var(--navy-deep);}
+</style>
+</head>
+<body>
+
+<!-- PROMISE BAR -->
+<div class="promise-bar">
+  <div class="container">
+    <span>Learn to speak British English with the clarity, rhythm and confidence that opens doors, builds trust and makes every conversation effortless.</span>
+    <span class="divider">/</span>
+    <span>Guided by Oxford-trained pronunciation expert, <strong>Sanda Beniamines</strong></span>
+  </div>
+</div>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="container">
+    <a href="#top" class="brand"><span class="brand-mark">SB</span> Elite British English</a>
+    <ul class="nav-links">
+      <li><a href="#programme">Programme</a></li>
+      <li><a href="#about">About Sanda</a></li>
+      <li><a href="#pricing">Hybrid vs Online</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="#pricing" class="btn btn-ghost-dark" style="padding:0.7em 1.3em;font-size:0.85rem;">Reserve my place</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero" id="top">
+  <div class="container hero-grid">
+    <div data-reveal>
+      <span class="eyebrow">Elite British English Pronunciation Programme</span>
+      <h1>Master the voice that <em>commands respect.</em></h1>
+      <p class="lede">You're brilliant. You're accomplished. And you deserve a voice that reflects the excellence you've already achieved. Your voice is more than sound — it's your signature, and it's how people remember you, trust you, and believe in what you say.</p>
+      <p class="lede">A premium three-week experience for professionals, academics and achievers who already speak English well — yet want to sound natural, confident and unmistakably refined. Guided by Oxford-trained linguist and pronunciation expert Sanda Beniamines, you'll master the clarity, rhythm and confidence of British English — and let your voice finally sound as brilliant as your mind.</p>
+      <p class="lede">Let's transform your accent — from a barrier into your greatest professional asset, in just three weeks.</p>
+      <div class="hero-cta-row">
+        <a href="#pricing" class="btn btn-gold">Begin your transformation</a>
+      </div>
+      <div class="hero-meta">
+        <span><b>3</b> weeks</span>
+        <span><b>21</b> hours of live training</span>
+        <span><b>6</b> places per cohort</span>
+        <span><b>Oxford</b>-trained mentor</span>
+      </div>
+    </div>
+    <div class="hero-portrait" data-reveal>
+      <span class="monogram">SB</span>
+      <div class="cap">Sanda Beniamines — Founder &amp; Director, Creative English Language Academy</div>
+    </div>
+  </div>
+</header>
+
+<!-- PROBLEM -->
+<section class="section section-light" id="problem">
+  <div class="container">
+    <div class="head-block" data-reveal>
+      <span class="eyebrow">The cost of "almost there"</span>
+      <h1>You know exactly what you want to say. But your accent says something else.</h1>
+      <h2 class="subhead">Have you ever analysed the hidden cost of sounding &ldquo;almost there&rdquo;?</h2>
+    </div>
+    <div data-reveal>
+      <p>You've spent years building expertise. You've worked hard to establish yourself professionally in the UK. Your English is strong. You know your grammar is correct. Your vocabulary? Rich.</p>
+      <p style="margin-top:1.1rem;">Yet every time you speak in a meeting, deliver a presentation or network at an event, there's that subtle hesitation. That moment when you sense people aren't quite hearing you — they're hearing where you're from. The accent that was once just part of your identity has become a barrier between your competence and how others perceive you.</p>
+      <p style="margin-top:1.1rem;">Maybe you've tried apps. You've watched YouTube videos. You've even mimicked native speakers. But nothing has given you the precision, the naturalness, the elegance you're seeking. And meanwhile&hellip;</p>
+      <ul class="cost-list">
+        <li>Your credibility suffers — clients hesitate, colleagues interrupt, and your ideas take longer to land.</li>
+        <li>Your confidence erodes — you second-guess yourself before speaking, avoid certain words, or speak less in important moments.</li>
+        <li>Your career stalls — whilst others with similar skills move forward, you feel held back by something as seemingly minor as pronunciation.</li>
+        <li>You feel like an outsider — even after years in the UK, your accent still marks you as "foreign" rather than "belonging."</li>
+        <li>The frustration builds — because you know you're capable of so much more.</li>
+        <li>You stop enjoying the language — speaking feels like effort, not expression. You wish your English could finally sound like you.</li>
+      </ul>
+      <p style="margin-top:2rem;max-width:42em;">Every day, brilliant professionals, academics and achievers in the UK struggle to express themselves with full confidence — not because they lack knowledge, but because their voice doesn't yet match their identity. Your accent shouldn't hold you back. It should carry your message with elegance and credibility.</p>
+      <blockquote class="pull-quote">"A precise voice changes the room. It shifts you from being heard to being listened to."</blockquote>
+    </div>
+    <div style="margin-top:2.8rem;">
+      <a href="#pricing" class="btn btn-outline">I'm ready to be listened to!</a>
+    </div>
+  </div>
+</section>
+
+<!-- STAT / IMPACT -->
+<section class="section section-deep" id="impact">
+  <div class="container stat-wrap">
+    <div data-reveal>
+      <span class="eyebrow">When sound misrepresents skill</span>
+      <h1 style="color:#fff;">When how you sound fails to match your ambition</h1>
+      <h2 class="subhead" style="margin-top:1.1rem;">Communication is power — and when your sound misrepresents your skill, opportunity quietly passes by.</h2>
+      <p style="margin-top:1.6rem;color:var(--slate-on-dark);max-width:38em;">When you speak, something feels off — a hesitation, a sound that doesn't quite match the image you want to project. That subtle accent makes you repeat yourself in meetings. It steals confidence from your presentations. It makes you feel like an outsider even after years in the UK.</p>
+      <p style="margin-top:1.1rem;color:var(--slate-on-dark);max-width:38em;">The silent cost? Missed opportunities and the slow erosion of professional confidence — promotions overlooked, ideas dismissed, social connections strained. It's not fair — but it's real.</p>
+      <div class="ask-box">
+        <p>So ask yourself</p>
+        <p class="q">If you could sound as confident as you think, how different would your daily life feel?</p>
+      </div>
+    </div>
+    <div data-reveal>
+      <div class="stat-big" data-count-to="36">0%</div>
+      <p class="stat-cap">Clear, fluent pronunciation increases perceived competence by 36% and improves professional trust. Those with clear, natural pronunciation integrate socially more easily, have greater job prospects, and are seen as more professionally competent.</p>
+      <div class="impact-grid">
+        <div class="impact-item">
+          <b>Loss of impact</b>
+          <p>Your ideas lose impact because your delivery feels hesitant — and your most important ideas are overshadowed by a lack of vocal precision.</p>
+        </div>
+        <div class="impact-item">
+          <b>Misperception</b>
+          <p>Opportunities pass to those who "sound" more fluent — because you are seen as less competent or authoritative than you truly are.</p>
+        </div>
+        <div class="impact-item">
+          <b>Self-censorship</b>
+          <p>You avoid making key contributions in meetings, presentations and interviews because you're perceived as less confident — even when you're fully capable.</p>
+        </div>
+      </div>
+      <p style="margin-top:2rem;color:#fff;font-family:'Fraunces',serif;font-size:1.15rem;">You deserve a voice that is as sophisticated as your career.</p>
+    </div>
+  </div>
+</section>
+
+<!-- INCLUDES STRIP -->
+<section class="section-light" style="padding:0;">
+  <div class="includes-strip">
+    <div class="includes-item"><span class="num">01</span>Interactive sessions with live feedback</div>
+    <div class="includes-item"><span class="num">02</span>Guided pronunciation drills and articulation coaching</div>
+    <div class="includes-item"><span class="num">03</span>Real-life speech simulations — meetings, interviews, presentations</div>
+    <div class="includes-item"><span class="num">04</span>Tailored guidance for your first-language background</div>
+    <div class="includes-item"><span class="num">05</span>Optional 1:1 pronunciation feedback upgrade</div>
+  </div>
+</section>
+
+<!-- PILLARS -->
+<section class="section section-light" id="programme">
+  <div class="container">
+    <div class="head-block" data-reveal>
+      <span class="eyebrow">The curriculum</span>
+      <h1>What you'll master through the Elite British English Pronunciation Programme — the pillars of precision</h1>
+      <h2 class="subhead">Over three intensive weeks, you will move beyond simple repetition to deep, systematic mastery of the British English sound system (Standard Southern British English / RP).</h2>
+    </div>
+    <div class="pillars">
+      <div class="pillar" data-reveal>
+        <span class="pillar-num ipa">I</span>
+        <div>
+          <h3>Pronunciation fundamentals — the core architecture</h3>
+          <p class="lede">We dismantle the sounds and rebuild them with British precision, using the International Phonetic Alphabet as your map.</p>
+          <ul>
+            <li>Master the subtle British vowel and consonant sounds that create distinction.</li>
+            <li>Learn precise mouth positioning and articulation techniques for clarity.</li>
+            <li>Build a consistent foundation that eliminates ambiguity and guesswork.</li>
+            <li>Speak not louder — but truer.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="pillar" data-reveal>
+        <span class="pillar-num ipa">II</span>
+        <div>
+          <h3>Intonation and fluency — the natural melody</h3>
+          <p class="lede">Clarity isn't just about single sounds; it's about the music of the sentence. Sanda coaches the natural rhythm that makes speech effortless to listen to.</p>
+          <ul>
+            <li>Master British sentence stress and intonation for professional authority.</li>
+            <li>Seamlessly connect your speech using weak forms for a truly fluid rhythm.</li>
+            <li>Control your voice's pitch and projection to maximise listener engagement.</li>
+            <li>Your voice will carry an authentic, British rhythm.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="pillar" data-reveal>
+        <span class="pillar-num ipa">III</span>
+        <div>
+          <h3>Accent and clarity enhancement — neutralising interference</h3>
+          <p class="lede">This is where the transformation becomes targeted. We identify and gently neutralise the specific pronunciation patterns from your first language that interfere with a clear, credible British sound.</p>
+          <ul>
+            <li>Systematically address and replace first-language "interference" patterns.</li>
+            <li>Receive real-time, highly personalised phonetic correction in a small group.</li>
+            <li>Polish your speech until it feels native, polished and authentic to your UK environment.</li>
+            <li>Sounding confident is never sounding "fake" — it's sounding aligned.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="pillar" data-reveal>
+        <span class="pillar-num ipa">IV</span>
+        <div>
+          <h3>Applied pronunciation skills — performance on demand</h3>
+          <p class="lede">We take your new precision into the real-world scenarios that matter most to your career.</p>
+          <ul>
+            <li>Simulate high-stakes professional meetings, interviews and presentations.</li>
+            <li>Develop voice projection and public speaking confidence through practice.</li>
+            <li>Use sophisticated British conversational rhythm in spontaneous discussion.</li>
+            <li>Transform clarity into career success.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div style="margin-top:3rem;">
+      <a href="#pricing" class="btn btn-gold">I want to experience the 3-week Pronunciation Programme</a>
+    </div>
+  </div>
+</section>
+
+<!-- VIDEO / QUOTE -->
+<section class="section section-dark quote-section">
+  <div class="container quote-media-wrap">
+    <div class="video-cutout" data-reveal>
+      <span class="tag">Message from Sanda</span>
+      <span class="play">&#9658;</span>
+    </div>
+    <div data-reveal>
+      <blockquote class="pull-quote" style="font-size:clamp(1.5rem,3vw,2.1rem);">"I don't teach you to sound British. I help you sound authentically you — confident, clear and credible. Together, we won't strive for perfection. Because this is about precision, and about giving your voice the same level of refinement you've given every other aspect of your professional life."
+        <cite>— Sanda Beniamines</cite>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT SANDA -->
+<section class="section section-light" id="about">
+  <div class="container">
+    <div class="head-block" data-reveal>
+      <span class="eyebrow">The mentor</span>
+      <h1>I'm Sanda. And I'm here to make you finally sound like you belong.</h1>
+      <h2 class="subhead">Oxford-trained. Internationally experienced. Results-obsessed.</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-copy" data-reveal>
+        <p>Speaking several languages was never a party trick or a hobby for me — I've always been fascinated by something most people never consider: the profound gap between knowing a language and sounding like you belong in it. I've lived that gap myself, and I've dedicated my entire career to closing it for others.</p>
+        <p>For several years, I've immersed myself in the British education system — as a student, a teacher, a linguist, and ultimately, someone who understands what it truly takes to master British English. What I discovered changed everything: education isn't about collecting diplomas. It's about transformation. The British approach doesn't reward rote memorisation. It demands critical thinking, intellectual courage, autonomy and real-world application. I absorbed it all — not just the methodology, but the mindset.</p>
+        <div class="highlight">Today, as your British English Accent and Pronunciation Expert and as the Founder and Director of Creative English Language Academy, I bring that philosophy to every professional I mentor: learning isn't about perfection. It's about presence, confidence, and the courage to be heard.</div>
+        <p>My journey? I didn't stumble into accent mentoring. I built toward it — deliberately, strategically, almost obsessively.</p>
+      </div>
+      <ul class="credentials" data-reveal>
+        <li><span class="mark ipa">&#10022;</span><div><div class="inst">Oxford University — English Language Teachers' Summer Seminar <span class="yr">2025</span></div><p>One of a small number of representatives from Romania and Moldova among educators from over twenty countries — an intensive programme refining global teaching excellence, brought straight back to her students.</p></div></li>
+        <li><span class="mark ipa">&#10022;</span><div><div class="inst">King's College London — Master's in Leadership and Development <span class="yr">in progress</span></div><p>Because transforming voices requires more than phonetics — it requires understanding how to lead people through change.</p></div></li>
+        <li><span class="mark ipa">&#10022;</span><div><div class="inst">Anglia Ruskin University — BA, Business &amp; HR Management <span class="yr">2023</span></div><p>Where leadership, team dynamics and human psychology intersect — skills that now inform every coaching session.</p></div></li>
+        <li><span class="mark ipa">&#10022;</span><div><div class="inst">International House London &amp; British Council <span class="yr">&nbsp;</span></div><p>Internationally recognised teaching accreditations.</p></div></li>
+        <li><span class="mark ipa">&#10022;</span><div><div class="inst">English UK &amp; LanguageCert — Cert IBET <span class="yr">2022</span></div><p></p></div></li>
+        <li><span class="mark ipa">&#10022;</span><div><div class="inst">Cambridge Assessment — TKT Modules 1, 2 &amp; 3 <span class="yr">2020</span></div><p>Solidifying a modern pedagogical approach and mastery of British teaching methodology.</p></div></li>
+        <li><span class="mark ipa">&#10022;</span><div><div class="inst">Trinity College London — Cert TESOL <span class="yr">2019</span></div><p></p></div></li>
+      </ul>
+    </div>
+
+    <div class="about-grid" style="margin-top:3.5rem;">
+      <div class="about-copy" data-reveal>
+        <p>Over the years, I've trained hundreds of professionals — online and in person — through CELA Academy. I design workshops that push people out of their comfort zones and into authentic, real-world English usage. I create educational products that don't just teach grammar and vocabulary, but teach confidence. And I do it all with the relentless belief that your voice should never hold you back from the life you're capable of living.</p>
+      </div>
+      <div class="about-copy" data-reveal>
+        <p style="font-family:'Fraunces',serif;font-size:1.2rem;font-weight:500;color:var(--ink);margin-bottom:0.9rem;">Why my approach is different</p>
+        <p>What makes my British English Accent and Pronunciation mentoring different isn't just my credentials — though being Oxford-trained certainly helps. It's because I've lived this journey myself.</p>
+      </div>
+    </div>
+
+    <div data-reveal style="margin-top:2.5rem;max-width:52em;">
+      <p>I know what it's like to master the grammar, build the vocabulary, and still feel like something's missing when you speak. I know the frustration of being brilliant on paper but uncertain in conversation. I know the subtle sting of being perceived as "foreign" even after years of dedication.</p>
+      <p style="margin-top:1.1rem;">I experienced all of this myself when I lived in Israel, learning Hebrew. I still remember the self-consciousness, the frustration of being brilliant in your head but uncertain when you speak, and the exhausting mental gymnastics of trying to "sound right." And I refuse to let that be your story.</p>
+      <p style="margin-top:1.1rem;">I've guided professionals from every corner of the world — entrepreneurs pitching to British investors, academics presenting at Oxford conferences, executives leading teams in London boardrooms. What they all had in common? They were brilliant. They just didn't sound like it yet. After working with me, they do. I helped them unlock the voice they already had inside — the voice that speaks with clarity, confidence and the kind of effortless authority that makes people lean in and listen.</p>
+      <p style="font-family:'Fraunces',serif;font-size:1.2rem;font-weight:500;color:var(--ink);margin:2rem 0 0.9rem;">My approach</p>
+      <p>My approach combines linguistic precision — from my own experience learning multiple languages, I understand exactly how first-language interference works — with psychological insight: I know that confidence is as much about mindset as it is about mouth positioning. The result? Professionals who improve their pronunciation and reclaim their voice.</p>
+      <p style="margin-top:1.1rem;">You didn't build your career, relocate to the UK, and master English grammar just to let pronunciation hold you back. You deserve a voice that matches your ambition. You deserve to sound as brilliant as you are. You deserve to walk into any room and know that when you speak, people will hear you — not where you're from.</p>
+      <p style="margin-top:1.1rem;">I can get you there in just three weeks. Let me show you what your voice is truly capable of.</p>
+    </div>
+    <div style="margin-top:2.5rem;">
+      <a href="#pricing" class="btn btn-outline">Let's work together!</a>
+    </div>
+  </div>
+</section>
+
+<!-- TRANSFORMATION -->
+<section class="section section-paper-soft">
+  <div class="container">
+    <div class="head-block" data-reveal>
+      <span class="eyebrow">The transformation</span>
+      <h1>Just imagine&hellip; the moment when your voice finally matches your vision</h1>
+      <h2 class="subhead">How does this version of you look?</h2>
+    </div>
+    <p data-reveal style="max-width:44em;">Imagine walking into your next meeting and hearing yourself speak with clarity, rhythm and the elegance of Modern British English. Picture yourself three weeks from now: you're preparing for an important presentation, a client pitch, or an important networking event. But this time, something is different.</p>
+    <div class="ba-grid" data-reveal>
+      <div class="ba-col ba-before">
+        <span class="tag">Before</span>
+        <p>You hesitated, your energy focused on sound-checking yourself. You worried about the way you spoke, losing focus on what you had to say.</p>
+      </div>
+      <div class="ba-col ba-after">
+        <span class="tag">After</span>
+        <p>You speak with a calm, effortless eloquence. Your voice has a new melody — one that commands attention and inspires absolute trust. You speak, and people lean in. Your words land with precision. Your intonation flows naturally and your refined British cadence allows your thoughts to flow without friction. There's no hesitation, no self-consciousness, no mental translation. Just clarity, confidence, and you — finally heard the way you've always deserved to be.</p>
+      </div>
+    </div>
+    <p data-reveal style="margin-top:2.2rem;max-width:44em;">This is the transformation Sanda delivers. When your sound aligns with your highly-qualified thoughts, people don't just listen differently — they listen better. This programme reframes your voice from a source of anxiety to a powerful tool for career growth, influence and self-expression. The difference between speaking correctly and transmitting with impact lies in accent, clarity and fluency. From this conviction — and a passion for the beauty of British pronunciation — the Elite British English Pronunciation Programme was born: an intensive programme designed for those ready to improve their English and elevate it to the next level.</p>
+
+    <div style="margin-top:3.5rem;" data-reveal>
+      <span class="eyebrow">In their words</span>
+      <div class="testi-grid">
+        <div class="testi-card">
+          <p class="q">"I finally stopped apologising for my accent. My English feels natural — and so do I."</p>
+          <p class="attr">Marius, Lecturer — Birmingham</p>
+        </div>
+        <div class="testi-card">
+          <p class="q">"Before this course, I avoided speaking up at meetings. Now my manager says I sound like BBC Radio."</p>
+          <p class="attr">Elena, Architect — London</p>
+        </div>
+      </div>
+    </div>
+
+    <div style="margin-top:3.5rem;" data-reveal>
+      <span class="eyebrow">This is what transformation looks like</span>
+      <ul class="trans-list">
+        <li><span class="ck ipa">01</span><p>You'll command attention the moment you speak. Your pronunciation is so clear, so refined, that people instantly perceive you as credible and authoritative.</p></li>
+        <li><span class="ck ipa">02</span><p>Your anxiety dissolves. You no longer avoid speaking opportunities or certain words; you seek them out because you finally enjoy how you sound.</p></li>
+        <li><span class="ck ipa">03</span><p>Professional doors open wider. Clients trust you faster, colleagues respect your contributions immediately, and opportunities flow more naturally.</p></li>
+        <li><span class="ck ipa">04</span><p>You'll feel proud. You are not just competent, but genuinely delighted by how you sound; the way you speak becomes a source of strength, not stress.</p></li>
+        <li><span class="ck ipa">05</span><p>You'll belong. Not by erasing who you are, but by achieving the accent that lets you move seamlessly through any British professional environment.</p></li>
+        <li><span class="ck ipa">06</span><p>Your presence transforms. Others comment on your confidence; strangers assume you've lived in the UK your entire life.</p></li>
+      </ul>
+      <div style="margin-top:2.5rem;">
+        <a href="#pricing" class="btn btn-gold">I want this transformation</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VALUE / PRICING -->
+<section class="section section-light" id="pricing">
+  <div class="container">
+    <div class="head-block center" data-reveal>
+      <span class="eyebrow">The investment</span>
+      <h1>An investment in how the world perceives you — for the rest of your life</h1>
+      <h2 class="subhead">3 weeks. 21 hours. A lifetime of clarity and credibility. Choose your journey: online intensive or hybrid London experience.</h2>
+    </div>
+    <p data-reveal style="max-width:44em;margin:0 auto 1rem;text-align:center;">The way you learn to speak shapes the way you show up in the world. Whether you prefer to immerse yourself in London's energy, or learn from the quiet comfort of your own home while connecting live with Sanda and your peers, the transformation remains the same: clarity, confidence, and the authentic sound of you.</p>
+    <p data-reveal style="max-width:44em;margin:0 auto 3rem;text-align:center;color:var(--slate);">Both programmes deliver the same core transformation — a complete recalibration of your British English pronunciation, rhythm and intonation. The difference is simply how you prefer to learn.</p>
+
+    <div class="price-grid" data-reveal>
+      <div class="price-card">
+        <h3>Online Programme</h3>
+        <p class="desc">A premium 3-week intensive designed for professionals worldwide who want Oxford-level precision from anywhere.</p>
+        <div class="price-row"><span class="now ipa">&pound;729</span><span class="was ipa">&pound;1,390 value</span></div>
+        <p class="price-value">6 live sessions &middot; 3 live workshops &middot; lifetime access</p>
+        <ul class="price-feats">
+          <li><span class="ck">&#10022;</span><div><b>6 live online pronunciation sessions</b><span class="sub">Interactive, focused drills with real-time feedback and correction from Sanda</span></div></li>
+          <li><span class="ck">&#10022;</span><div><b>Full session recordings</b><span class="sub">Replay, practise and refine at your own pace — lifetime access</span></div></li>
+          <li><span class="ck">&#10022;</span><div><b>3 live online workshops</b><span class="sub">Guided practice and peer learning</span></div></li>
+          <li><span class="ck">&#10022;</span><div><b>Personalised accent assessment</b><span class="sub">Tailored guidance based on your specific pronunciation challenges</span></div></li>
+          <li><span class="ck">&#10022;</span><div><b>Personalised first-language analysis</b><span class="sub">Your plan adapted to your native language patterns</span></div></li>
+          <li><span class="ck">&#10022;</span><div><b>Digital pronunciation Sound Map</b><span class="sub">Your personal reference guide for every British sound, stress pattern and rhythm rule</span></div></li>
+          <li><span class="ck">&#10022;</span><div><b>Private practice community</b><span class="sub">Submit voice recordings between sessions for direct feedback</span></div></li>
+        </ul>
+        <button class="btn btn-outline" data-checkout="online">Choose Online — &pound;729</button>
+      </div>
+
+      <div class="price-card featured">
+        <span class="flag">Most immersive</span>
+        <h3>Hybrid Programme</h3>
+        <p class="desc">A signature 3-week journey that blends live online precision with the irreplaceable power of in-person refinement in London.</p>
+        <div class="price-row"><span class="now ipa">&pound;849</span><span class="was ipa">&pound;1,590 value</span></div>
+        <p class="price-value">6 live sessions &middot; 2 in-person workshops &middot; lifetime access</p>
+        <ul class="price-feats">
+          <li><span class="ck">&#10022;</span><div><b>6 live online pronunciation sessions</b><span class="sub">Interactive, focused drills with real-time feedback and correction from Sanda</span></div></li>
+          <li><span class="ck">&#10022;</span><div><b>Full session recordings</b><span class="sub">Replay, practise and refine at your own pace — lifetime access</span></div></li>
+          <li><span class="ck">&#10022;</span><div><b>2 face-to-face workshops in central London</b><span class="sub">Immersive, tactile practice — live coaching, immediate correction, transformational presence</span></div></li>
+          <li><span class="ck">&#10022;</span><div><b>1 final online integration workshop</b><span class="sub">Performance feedback, real-world application, confidence anchoring</span></div></li>
+          <li><span class="ck">&#10022;</span><div><b>Personalised accent assessment</b><span class="sub">Tailored guidance based on your specific pronunciation challenges</span></div></li>
+          <li><span class="ck">&#10022;</span><div><b>Personalised first-language analysis</b><span class="sub">Your plan adapted to your native language patterns</span></div></li>
+          <li><span class="ck">&#10022;</span><div><b>Digital pronunciation Sound Map</b><span class="sub">Your personal reference guide for every British sound, stress pattern and rhythm rule</span></div></li>
+          <li><span class="ck">&#10022;</span><div><b>Private practice community</b><span class="sub">Submit voice recordings between sessions for direct feedback</span></div></li>
+        </ul>
+        <button class="btn btn-gold" data-checkout="hybrid">Choose Hybrid — &pound;849</button>
+      </div>
+    </div>
+
+    <div style="max-width:46em;margin:4rem auto 0;" data-reveal>
+      <p style="font-family:'Fraunces',serif;font-size:1.2rem;font-weight:500;margin-bottom:0.9rem;">What you're really investing in</p>
+      <ul class="trans-list">
+        <li><span class="ck ipa">01</span><p><b>Career acceleration.</b> Every word you say shapes the way people see you. When you sound clear, natural and confident, you don't have to chase opportunities — they start finding you.</p></li>
+        <li><span class="ck ipa">02</span><p><b>Confidence that grows with you.</b> As soon as your accent starts to shift, something inside you shifts too. You stop second-guessing yourself and start speaking up.</p></li>
+        <li><span class="ck ipa">03</span><p><b>Lifetime access.</b> Revisit recordings, materials and techniques whenever you need a refresher.</p></li>
+        <li><span class="ck ipa">04</span><p><b>Time you'll never waste again.</b> No more overthinking before every sentence, or avoiding presentations. Speak freely — and save that energy for what matters.</p></li>
+        <li><span class="ck ipa">05</span><p><b>Doors that finally open.</b> When your voice matches your skills, people listen differently, and new opportunities naturally open up.</p></li>
+        <li><span class="ck ipa">06</span><p><b>A voice that feels like you.</b> This isn't just about pronunciation. It's about coming home to your voice — proud, at ease, and fully yourself, in any room.</p></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- WHY THIS PRICE -->
+<section class="section section-dark">
+  <div class="container quote-media-wrap">
+    <div class="video-cutout" data-reveal>
+      <span class="tag">A word from Sanda</span>
+      <span class="play">&#9658;</span>
+    </div>
+    <div data-reveal>
+      <span class="eyebrow">Why such an accessible price for an elite programme</span>
+      <p style="color:var(--slate-on-dark);font-size:1.05rem;">Because this isn't about numbers, it's about voices — and helping you find yours. In small, exclusive groups, you'll receive tailored feedback that honours your background while elevating your presence — a rare blend of prestige and personalisation.</p>
+      <p style="color:var(--slate-on-dark);font-size:1.05rem;margin-top:1rem;">If you've ever silenced yourself out of doubt, if you've ever replayed a conversation wishing you'd sounded different — this programme was made for you. &pound;849 is less than a new phone, but it gives you something far rarer: a voice that finally feels like you.</p>
+      <p style="color:var(--slate-on-dark);font-size:1.05rem;margin-top:1rem;">Sanda has helped hundreds of professionals reshape their accent and their entire self-perception when speaking English. Her approach is precise, compassionate and tailored — every learner receives real-time feedback, phonetic guidance and refined articulation practice inspired by Oxford and BBC standards.</p>
+      <div style="margin-top:1.8rem;">
+        <a href="#pricing" class="btn btn-gold">I secure my spot</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHO IT'S FOR -->
+<section class="section section-light" id="who">
+  <div class="container">
+    <div class="head-block" data-reveal>
+      <span class="eyebrow">Is this for you</span>
+      <h1>You already speak English. Now, it's time to belong in it.</h1>
+    </div>
+    <p data-reveal style="max-width:44em;">This programme is not for beginners, and it isn't for everyone — that's intentional. It's for individuals, students and professionals who already speak English but want their voice to match their vision. If you know your accent is creating a barrier between your competence and how people perceive you, read on. Because knowing a language isn't enough. You have to sound like you belong in it.</p>
+
+    <ul class="who-list" data-reveal>
+      <li class="who-item"><h4>You're already fluent — but your accent holds you back</h4><p>You don't need grammar lessons or vocabulary building. You can hold sophisticated conversations and understand native speakers with ease. But when you speak, you sense that subtle hesitation from others. If you think in English but don't always sound confident, this is for you.</p></li>
+      <li class="who-item"><h4>You're in a professional role where your voice matters</h4><p>You lead meetings, pitch to clients, present to colleagues, network at events, deliver training or keynotes. Your voice is a tool of your profession — and right now, it's not serving you as powerfully as it could.</p></li>
+      <li class="who-item"><h4>You've tried apps and YouTube — but nothing stuck</h4><p>You've downloaded apps, watched pronunciation videos, tried mimicking native speakers. Maybe you improved slightly — but it never became natural. You need expert guidance and a structured system that actually works.</p></li>
+      <li class="who-item"><h4>You're committed to practice</h4><p>You understand that transformation requires effort. You're willing to invest 20&ndash;30 minutes daily practising outside sessions — not looking for a magic pill, ready to do the work.</p></li>
+      <li class="who-item"><h4>You want results in weeks, not years</h4><p>You don't have time to spend years hoping your accent improves. You need a proven, intensive system that delivers tangible results quickly. Three weeks is your timeline.</p></li>
+      <li class="who-item"><h4>You're ready to step outside your comfort zone</h4><p>You're willing to practise out loud, record yourself, receive correction, and push through the awkwardness of learning something new. Temporary discomfort leads to permanent confidence.</p></li>
+      <li class="who-item"><h4>You value expertise and quality over cheap, quick fixes</h4><p>You want the best option — working with an Oxford-trained specialist, in a cohort limited to six participants, with lifetime access to materials.</p></li>
+      <li class="who-item"><h4>You're based in the UK — or want authentic British pronunciation</h4><p>You live, work or study in the UK, or you're preparing to. You want the precision, rhythm and intonation that make people assume you've lived here your entire life.</p></li>
+      <li class="who-item"><h4>You're tired of feeling like an outsider</h4><p>Despite your accomplishments and years in the UK, you still feel like your accent marks you as "foreign." You want to walk into any room and know that when you speak, people hear your ideas — not where you're from.</p></li>
+      <li class="who-item"><h4>You believe your voice should match your ambition</h4><p>You've invested in your education, your skills, your expertise. You're ready to refine the final piece: how you sound when you speak.</p></li>
+    </ul>
+
+    <div data-reveal>
+      <p style="font-family:'Fraunces',serif;font-size:1.1rem;color:var(--ink);margin:1rem 0 0.9rem;">This course is also for you if you recognise any of the following:</p>
+      <ul class="pain-list">
+        <li>Requests to "repeat yourself" erode your confidence in professional settings.</li>
+        <li>Hesitation in high-stakes moments — interviews, networking events — limits career growth.</li>
+        <li>Feeling like an outsider in British communities, despite your skills and efforts.</li>
+        <li>Risk of non-compliance with upcoming visa requirements, jeopardising work opportunities.</li>
+        <li>Underlying self-doubt that silences your true potential in every interaction.</li>
+      </ul>
+    </div>
+
+    <div data-reveal style="max-width:44em;margin-top:2.5rem;">
+      <p>If that's you — if you read this section and nodded your head repeatedly — Sanda can't wait to work with you. But if you're still on the fence, that's okay too.</p>
+      <p style="margin-top:1rem;">Write to arrange a complimentary 15-minute clarity call. Sanda will ask a few questions, assess your readiness, and tell you honestly whether this programme is right for you — even if that means recommending you wait or try something else first. She'd rather turn away someone who's not ready than accept someone who won't get results.</p>
+      <div style="margin-top:1.8rem;">
+        <a href="#pricing" class="btn btn-gold">I am ready — reserve my place now!</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<section class="section section-paper-soft" style="padding-top:3.5rem;padding-bottom:3.5rem;">
+  <div class="container" style="text-align:center;">
+    <span class="eyebrow" style="justify-content:center;">Trusted by professionals and academics across the UK</span>
+    <div class="trust-strip">
+      <span>Oxford University</span><span>King&rsquo;s College London</span><span>Anglia Ruskin University</span><span>British Council</span><span>Trinity College London</span><span>Cambridge Assessment</span>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section section-light" id="faq">
+  <div class="container">
+    <div class="head-block center" data-reveal>
+      <span class="eyebrow">FAQ</span>
+      <h1>Everything you need to know before you begin</h1>
+    </div>
+    <div class="faq-list" data-reveal>
+      <details class="faq-item"><summary class="faq-q">What if my English level isn't advanced enough?<span class="plus">+</span></summary><div class="faq-a">This programme is designed for professionals with pre-intermediate to advanced English (A2+&ndash;C1 level). If you can hold business conversations, read professional emails and understand most native speakers, you're ready. We're not teaching grammar or vocabulary — we're refining your pronunciation and confidence.</div></details>
+      <details class="faq-item"><summary class="faq-q">I've tried apps and YouTube videos before. Why will this be different?<span class="plus">+</span></summary><div class="faq-a">Apps can't hear the subtle nuances of your accent or correct your specific first-language interference patterns. Sanda provides real-time, personalised feedback based on how your mouth, tongue and vocal cords are producing sounds — the difference between generic tips and genuine transformation.</div></details>
+      <details class="faq-item"><summary class="faq-q">Will I lose my identity or sound fake?<span class="plus">+</span></summary><div class="faq-a">Absolutely not. This isn't about erasing who you are — it's about giving you choice. You'll still sound like you; you'll just sound like the most confident, clear, refined version of you. Many participants describe it as "finally sounding on the outside how I've always felt on the inside."</div></details>
+      <details class="faq-item"><summary class="faq-q">How much time do I need to commit outside of sessions?<span class="plus">+</span></summary><div class="faq-a">Plan for 20&ndash;30 minutes of daily practice. The sessions teach you what to do; the practice makes it automatic. Drills are designed to fit your routine — you can practise whilst commuting, cooking or walking.</div></details>
+      <details class="faq-item"><summary class="faq-q">What if I can't attend one of the sessions?<span class="plus">+</span></summary><div class="faq-a">Every session is recorded and available for replay. Live sessions offer real-time feedback recordings can't replicate, so full attendance is encouraged. If you must miss one, you'll still have the recording and the private support group.</div></details>
+      <details class="faq-item"><summary class="faq-q">I live outside London. Should I choose the online or hybrid programme?<span class="plus">+</span></summary><div class="faq-a">If you're international or outside the London area, the online programme is comprehensive and transformational. If you can travel to London twice during the two offline workshops, the hybrid experience offers a deeper, more tactile level of learning. Both deliver the same core results.</div></details>
+      <details class="faq-item"><summary class="faq-q">What's included in the "Personalised accent analysis"?<span class="plus">+</span></summary><div class="faq-a">Sanda identifies the specific sounds, stress patterns and intonation issues most affected by your first language — for example, Romanian speakers struggle with different sounds than Polish or Spanish speakers. Your practice plan is tailored to your exact needs, not generic rules.</div></details>
+      <details class="faq-item"><summary class="faq-q">Is this suitable for older professionals, or is it easier for younger learners?<span class="plus">+</span></summary><div class="faq-a">Age is irrelevant when you have the correct method. Sanda has successfully mentored professionals across a wide range of ages. What matters is commitment, not age — mature professionals often progress faster thanks to stronger self-awareness and motivation.</div></details>
+      <details class="faq-item"><summary class="faq-q">What happens after the three weeks?<span class="plus">+</span></summary><div class="faq-a">You'll have lifetime access to all materials, recordings and resources, and you'll remain part of the alumni community for continued sharing and occasional guidance. The skills you build become permanent — this isn't temporary learning.</div></details>
+      <details class="faq-item"><summary class="faq-q">Can I pay in instalments?<span class="plus">+</span></summary><div class="faq-a">Yes. Flexible payment plans are available — get in touch to arrange a schedule that works for your budget whilst securing your place in the cohort.</div></details>
+      <details class="faq-item"><summary class="faq-q">What's the difference between Hybrid and Online?<span class="plus">+</span></summary><div class="faq-a">Both programmes offer the same level of expert guidance, content and personalised feedback — the difference lies in how you experience it. Hybrid combines live online sessions with two in-person workshops in London for physical interaction and direct presence with the trainer. Online delivers the same transformation through fully live, interactive sessions — perfect if you prefer flexibility or live outside London.</div></details>
+      <details class="faq-item"><summary class="faq-q">Do I get a certificate of completion?<span class="plus">+</span></summary><div class="faq-a">Yes — upon successful completion you'll receive an official Certificate of Completion issued by Creative English Language Academy, recognising your achievement in mastering British English pronunciation, fluency and articulation.</div></details>
+      <details class="faq-item"><summary class="faq-q">Is three weeks really enough?<span class="plus">+</span></summary><div class="faq-a">Yes — and it's one of the programme's greatest strengths. This is an intensive, results-driven experience for professionals who already have a solid command of English. Through 21 hours of guided training, real-time feedback and focused articulation drills, you'll experience measurable improvement from the very first week.</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="section section-deep final-cta" id="reserve">
+  <div class="container">
+    <div class="head-block center" data-reveal>
+      <span class="eyebrow">Your moment is now</span>
+      <h1 style="color:#fff;">Step into the voice you were always meant to have</h1>
+    </div>
+    <div data-reveal style="max-width:40em;margin:0 auto;color:var(--slate-on-dark);">
+      <p>You've read this far because you know — deep down — that your accent isn't just a "minor issue." It's the invisible barrier between where you are and where you deserve to be. You're not imagining it: it's affecting how people perceive you, and it's costing you opportunities, confidence and the respect your expertise deserves.</p>
+      <p style="margin-top:1rem;">But here's the truth: you're just three weeks away from complete transformation. Or, you could still be where you are right now — frustrated, self-conscious, held back by something entirely fixable. The choice is yours. But the time is now.</p>
+    </div>
+    <div class="slots" data-reveal><span class="dot"></span> Just 6 places available in the next cohort</div>
+    <div data-reveal style="max-width:40em;margin:0 auto 2rem;color:var(--slate-on-dark);">
+      <p>You didn't come this far — study, build your career, relocate, achieve everything you've achieved — to let something as simple as pronunciation hold you back. It's time to sound as brilliant as you are.</p>
+    </div>
+    <a href="#pricing" class="btn btn-gold" data-reveal>I want to speak clearly, be heard and remembered</a>
+    <p data-reveal style="margin-top:1.6rem;color:var(--slate-on-dark);font-size:0.92rem;">Your transformation begins the moment you commit. We'll see you in the cohort.</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div>
+        <a href="#top" class="brand"><span class="brand-mark">SB</span> Elite British English Pronunciation Programme</a>
+        <p style="margin-top:0.8rem;max-width:28em;">Guided by Sanda Beniamines | Oxford-Trained Pronunciation Expert. Empowering professionals to speak with clarity, confidence and elegance.</p>
+      </div>
+      <div>
+        <p class="ipa" style="font-size:0.72rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem;">Quick links</p>
+        <ul class="footer-links">
+          <li><a href="#about">About Sanda</a></li>
+          <li><a href="#programme">Programme details</a></li>
+          <li><a href="#pricing">Hybrid vs Online</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> Elite British English Pronunciation Programme. All rights reserved.</span>
+      <span>Creative English Language Academy — London</span>
+    </div>
+  </div>
+</footer>
+
+<!-- CHECKOUT MODAL -->
+<div class="co-backdrop" id="coBackdrop">
+  <div class="co-modal">
+    <button class="co-close" id="coClose" aria-label="Close">&#10005;</button>
+    <h3 id="coTitle">Reserve your place</h3>
+    <p id="coDesc">You're one step from securing your cohort place. You'll be redirected to Stripe's secure checkout.</p>
+    <button class="btn btn-gold" id="coConfirm" style="width:100%;justify-content:center;">Continue to secure payment</button>
+    <p class="co-status" id="coStatus"></p>
+  </div>
+</div>
+
+<script>
+// Reveal-on-scroll
+if ('IntersectionObserver' in window){
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('is-visible'); io.unobserve(e.target); } });
+  },{threshold:0.12});
+  document.querySelectorAll('[data-reveal]').forEach(function(el){ io.observe(el); });
+}else{
+  document.querySelectorAll('[data-reveal]').forEach(function(el){ el.classList.add('is-visible'); });
+}
+
+// Stat count-up
+var statEl=document.querySelector('[data-count-to]');
+if(statEl){
+  var target=parseInt(statEl.getAttribute('data-count-to'),10);
+  var done=false;
+  var statObs=new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting && !done){
+        done=true;
+        var start=null, duration=1400;
+        function step(ts){
+          if(!start) start=ts;
+          var p=Math.min((ts-start)/duration,1);
+          statEl.textContent=Math.round(p*target)+'%';
+          if(p<1) requestAnimationFrame(step);
+        }
+        if(window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+          statEl.textContent=target+'%';
+        }else{
+          requestAnimationFrame(step);
+        }
+      }
+    });
+  },{threshold:0.5});
+  statObs.observe(statEl);
+}
+
+// Year
+document.getElementById('year').textContent=new Date().getFullYear();
+
+// Checkout modal wiring
+var backdrop=document.getElementById('coBackdrop');
+var coTitle=document.getElementById('coTitle');
+var coDesc=document.getElementById('coDesc');
+var coConfirm=document.getElementById('coConfirm');
+var coStatus=document.getElementById('coStatus');
+var currentPlan=null;
+var PLAN_LABEL={online:'Online Programme — £729', hybrid:'Hybrid Programme — £849'};
+
+document.querySelectorAll('[data-checkout]').forEach(function(btn){
+  btn.addEventListener('click', function(){
+    currentPlan=btn.getAttribute('data-checkout');
+    coTitle.textContent='Reserve your place — '+(currentPlan==='hybrid'?'Hybrid':'Online');
+    coDesc.textContent="You're securing the "+PLAN_LABEL[currentPlan]+" programme. You'll be redirected to Stripe's secure checkout to complete payment.";
+    coStatus.classList.remove('show');
+    backdrop.classList.add('open');
+  });
+});
+document.getElementById('coClose').addEventListener('click', function(){ backdrop.classList.remove('open'); });
+backdrop.addEventListener('click', function(e){ if(e.target===backdrop) backdrop.classList.remove('open'); });
+
+coConfirm.addEventListener('click', function(){
+  if(!currentPlan) return;
+  coConfirm.disabled=true;
+  coConfirm.textContent='Connecting to Stripe…';
+  fetch('/api/create-checkout-session', {
+    method:'POST',
+    headers:{'Content-Type':'application/json'},
+    body:JSON.stringify({plan: currentPlan})
+  }).then(function(r){
+    if(!r.ok) throw new Error('checkout-unavailable');
+    return r.json();
+  }).then(function(data){
+    if(data && data.url){ window.location.href=data.url; }
+    else{ throw new Error('no-url'); }
+  }).catch(function(){
+    coStatus.textContent='Secure checkout isn’t connected on this preview yet — Stripe goes live once the site is deployed. Meanwhile, write to Sanda directly to reserve your place.';
+    coStatus.classList.add('show');
+    coConfirm.disabled=false;
+    coConfirm.textContent='Continue to secure payment';
+  });
+});
+</script>
+</body>
+</html>

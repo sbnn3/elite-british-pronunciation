@@ -1,0 +1,12 @@
+{
+  "name": "elite-british-pronunciation",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Landing page for the Elite British English Pronunciation Programme (Creative English Language Academy).",
+  "scripts": {
+    "dev": "vercel dev"
+  },
+  "dependencies": {
+    "stripe": "^16.0.0"
+  }
+}
