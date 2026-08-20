@@ -255,8 +255,8 @@ p{margin:0;}
 .who-item{counter-increment:who;padding:1.6rem 0;border-top:1px solid var(--paper-line);display:grid;grid-template-columns:2.4rem 1fr;gap:1rem;}
 .who-list .who-item:last-of-type{border-bottom:1px solid var(--paper-line);}
 .who-item::before{content:counter(who,decimal-leading-zero);font-family:'IBM Plex Mono',monospace;color:var(--gold);font-size:0.85rem;padding-top:0.2rem;}
-.who-item h4{font-family:'Fraunces',serif;font-weight:500;font-size:1.12rem;margin-bottom:0.4rem;}
-.who-item p{color:var(--slate);font-size:0.96rem;}
+.who-item h4{grid-column:2;font-family:'Fraunces',serif;font-weight:500;font-size:1.12rem;margin-bottom:0.4rem;}
+.who-item p{grid-column:2;color:var(--slate);font-size:0.96rem;}
 .pain-list{list-style:none;margin:2rem 0 0;padding:1.6rem 1.8rem;background:rgba(110,36,48,0.05);border:1px solid rgba(110,36,48,0.2);border-radius:4px;display:grid;gap:0.7rem;}
 .pain-list li{padding-left:1.2rem;position:relative;font-size:0.95rem;}
 .pain-list li::before{content:"·";position:absolute;left:0;color:var(--wine);font-size:1.4rem;line-height:0.6;}
